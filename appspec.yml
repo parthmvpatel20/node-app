@@ -2,7 +2,6 @@ version: 0.0
 os: linux
 files:
   - source: /
-    destination: /var/www/html/WordPress
 hooks:
   ApplicationStart:
     - location: /scripts/start-docker.sh
