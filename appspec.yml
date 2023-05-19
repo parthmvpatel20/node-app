@@ -5,6 +5,9 @@ files:
     destination: /var/www/
 hooks:
   ApplicationStart:
+    - location: /scripts/stop-docker.sh
+      timeout: 300
+      runas: root
     - location: /scripts/pull_image.sh
       timeout: 600
       runas: root
