@@ -9,7 +9,7 @@ hooks:
       timeout: 300
       runas: root
   Install:
-    - location: scripts/pull_image.sh
+    - location: /scripts/pull_image.sh
       timeout: 300
       runas: root
   ApplicationStart:
