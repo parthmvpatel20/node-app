@@ -4,15 +4,13 @@ files:
   - source: /
     destination: /var/www/
 hooks:
-  BeforeInstall:
-    - location: /scripts/stop-docker.sh
-      timeout: 300
-      runas: root
-  Install:
-    - location: /scripts/pull_image.sh
-      timeout: 300
-      runas: root
   ApplicationStart:
+    - location: /scripts/stop-docker.sh
+      timeout: 600
+      runas: root
+    - location: /scripts/pull_image.sh
+      timeout: 600
+      runas: root
     - location: /scripts/start-docker.sh
       timeout: 600
       runas: root
