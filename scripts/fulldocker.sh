@@ -1,1 +1,1 @@
-bash /var/www/scripts/fulldocker-us.sh
+bash /home/ubuntu/project/fulldocker-us.sh
