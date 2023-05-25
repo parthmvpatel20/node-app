@@ -1,10 +1,7 @@
 version: 0.0
 os: linux
-files:
-  - source: /appspec.yml
-    destination: /var/www/
 hooks:
   ApplicationStart:
-    - location: /home/ubuntu/project/fulldocker-us.sh
+    - location: /scripts/fulldocker.sh
       timeout: 700
       runas: root
