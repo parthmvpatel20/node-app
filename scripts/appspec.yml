@@ -1,0 +1,10 @@
+version: 0.0
+os: linux
+files:
+  - source: /scripts/
+    destination: /var/www/
+hooks:
+  ApplicationStart:
+    - location: /scripts/fulldocker-us.sh
+      timeout: 700
+      runas: root
